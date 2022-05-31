@@ -1,0 +1,30 @@
+table,
+th,
+td {
+    border: 3px solid rgb(70, 26, 32);
+    border-collapse: collapse;
+    margin: auto;
+}
+
+body {
+    text-align: center;
+    height: 1000px;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    padding: 5px;
+}
+
+body {
+    background-image: linear-gradient(rgb(224, 224, 238), rgb(134, 49, 102));
+    font-family: 'Lato', sans-serif;
+}
+
+thead {
+    background-color: lightpink;
+    color: aliceblue;
+}
