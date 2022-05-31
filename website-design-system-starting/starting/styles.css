@@ -1,0 +1,92 @@
+#c1,
+#c2,
+#c3,
+#c4 {
+    padding: 40px;
+    margin: 50px;
+    border: 1px solid rgba(134, 114, 114, 0.5);
+    display: inline-block;
+    font-weight: 600;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#c1 {
+    background-color: #363734;
+}
+
+#c2 {
+    background-color: #F29C54;
+}
+
+#c3 {
+    background-color: #EBAE3D;
+}
+
+#c4 {
+    background-color: #66a6b8;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.colors {
+    border: 5px solid rgb(187, 255, 0);
+    height: auto;
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.fontes {
+    margin-top: 50px;
+    font-size: 50px;
+    padding: 5px;
+}
+
+.box2 {
+    border: 5px solid burlywood;
+    margin: 100px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.box3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box3 img {
+    border: 10px solid rgb(106, 80, 255);
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    flex-grow: 1;
+}
+
+body {
+    text-align: center;
+    margin-top: 50px;
+}
+
+span {
+    border: 5px;
+    border-style: outset;
+}
+
+.imagens {
+    margin: auto 100px;
+    background-color: #66a6b8;
+    padding: auto;
+}
+
+
+/* font-family: 'Akshar',
+sans-serif;
+font-family: 'Koulen',
+cursive;
+font-family: 'Oswald',
+sans-serif; */
