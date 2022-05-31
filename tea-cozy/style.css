@@ -1,0 +1,123 @@
+#header {
+    border: 1px solid rgb(4, 0, 255);
+    height: 69px;
+    border-bottom: 3px solid red;
+    top: 0;
+    background-color: rgb(93, 93, 167);
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 10;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+#header h3 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+#header img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+#header p {
+    display: inline-block;
+    border: 2px solid white;
+}
+
+body {
+    background-color: rgb(244, 244, 245);
+    width: auto;
+    height: auto;
+    border: 10px solid rgb(102, 49, 49);
+    display: inline-block;
+    align-content: center;
+}
+
+.a {
+    border: 10px solid rgb(32, 182, 65);
+    height: 700px;
+    margin: 70px 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    max-width: 100%;
+    display: flex;
+}
+
+div #header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#box1 {
+    display: flex;
+    background-color: blueviolet;
+    height: 100px;
+    min-width: fit-content;
+    flex-grow: 1;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.box3 {
+    max-width: 300px;
+    height: 300px;
+    margin: 40px;
+    padding: 10px 100px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    line-height: 20px;
+}
+
+#section1 {
+    border: 10px solid rgb(32, 182, 65);
+    flex-wrap: wrap;
+    padding: auto 20px;
+    min-height: 200px;
+    margin: 70px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(187, 110, 110);
+}
+
+#section2 {
+    border: 10px solid rgb(32, 182, 65);
+    flex-wrap: wrap;
+    padding: auto 20px;
+    min-height: 200px;
+    margin: 70px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(187, 110, 110);
+}
+
+figcaption {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    opacity: 0.9;
+    margin-top: 0px;
+}
+
+#section1 img {
+    height: 200px;
+    max-width: 100%;
+    padding: 10px auto;
+    margin: 2px;
+}
+
+p,
+h2,
+h5 {
+    text-align: center;
+}
