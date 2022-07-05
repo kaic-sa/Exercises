@@ -9,7 +9,10 @@ const generateTarget = num => {
 }
 
 const compareGuesses = (human, computer, secret) => {
-
+    if (human < 0 || human > 9) {
+        alert('Numero nao permitido')
+        window.location.reload(true);
+    }
     if (secret - human > secret - computer) {
 
         return false
@@ -26,11 +29,3 @@ const updateScore = winner => {
 const advanceRound = () => {
     currentRoundNumber + 1;
 }
-
-const isHigh = () => {
-    if (0 > -3) {
-        return true
-    }
-}
-
-console.log(compareGuesses(3, 6, 1));
