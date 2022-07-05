@@ -4,15 +4,33 @@ let currentRoundNumber = 1;
 
 // Write your code below:
 
-const generateTarget = num =>{
-    return Math.floor(Math.random()*9)
+const generateTarget = num => {
+    return Math.floor(Math.random() * 9)
 }
 
-const compareGuesses = (human, computer, secret)=>{
-if (human-secret > computer-secret){
-    return false
-} else if ( human-secret > computer-secret){
-    return true
-} else return true
+const compareGuesses = (human, computer, secret) => {
+
+    if (secret - human > secret - computer) {
+
+        return false
+    } else if (secret - human < secret - computer) {
+        return true
+    } else return true
 }
-console.log(compareGuesses(6,5,2));
+
+const updateScore = winner => {
+    if (winner === 'human') {
+        humanScore += 1;
+    } else computerScore += 1;
+}
+const advanceRound = () => {
+    currentRoundNumber + 1;
+}
+
+const isHigh = () => {
+    if (0 > -3) {
+        return true
+    }
+}
+
+console.log(compareGuesses(3, 6, 1));
