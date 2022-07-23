@@ -65,4 +65,4 @@ for (let i = 0; i < 3; i++) {
     colony.push(pAequorFactory(i, mockUpStrand()))
 }
 console.log(colony)
-console.log('finished little')
+console.log('finished littasdadle')
