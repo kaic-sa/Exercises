@@ -18,7 +18,7 @@ class ShiftCipher {
         let str = Array.from(string)
         str = str.map(ele => {
             let ele1 = ele.charCodeAt()
-            if (ele1 != 32 && ele1 >= 97 && ele1 <= 122) {
+            if (ele1 != 32 && ele1 >= 65 && ele1 <= 90 && ele1 >= 97 && ele1 <= 122) {
                 if (ele1 + this.toShift > 122) {
                     return 97 + (ele1 + this.toShift) - 123
                 } else return ele1 + this.toShift;
@@ -29,15 +29,19 @@ class ShiftCipher {
     }
     decrypt(string) {
         let str = Array.from(string)
-        console.log(str)
         str = str.map(ele => {
             let ele1 = ele.charCodeAt()
-            if (ele1 != 32 && ele1 >= 97 && ele1 <= 122) {
-                if (ele1 - this.toShift < 97) {
-                    return 122 - (ele1 - this.toShift)
+
+
+            if (ele1 != 32 && ele1 >= 65 && ele1 <= 90) {
+
+                //return ele1 - this.toShift;
+                if (ele1 - this.toShift < 65) {
+                    return 90 + 65 - this.toShift - 64;
                 } else return ele1 - this.toShift
             } else return ele1
         })
+        str = str.map(ele => String.fromCharCode(ele).toLowerCase())
         console.log(str)
 
     }
@@ -45,5 +49,5 @@ class ShiftCipher {
 }
 
 const cipher = new ShiftCipher(2);
-cipher.encrypt('I love to code!')
-cipher.decrypt('K <3 OA RWRRA');
+cipher.encrypt('Z')
+cipher.decrypt('A')
