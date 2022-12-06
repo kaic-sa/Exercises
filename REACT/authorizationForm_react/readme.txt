@@ -1,0 +1,1 @@
+Creating a simple autorization layer. Hiding sensitive information for the user.
